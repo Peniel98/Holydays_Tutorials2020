@@ -1,0 +1,101 @@
+\newcommand{\Tr}{\mathrm{Tr}} % Trace of a matrix
+\newcommand{\diag}{\mathrm{diag}} % Diagonal of a matrix
+
+% Défintion des commandes raccourcies personnelles
+\newcommand{\bls}[1]{\boldsymbol{#1}} % use boldsymbol
+\newcommand{\mt}[1]{\mathtt{#1}} %  Use mathtt
+\newcommand{\mc}[1]{\mathcal{#1}} % Use mathcal
+\newcommand{\mb}[1]{\mathbb{#1}} % Use mathbb
+\newcommand{\mr}[1]{\mathrm{#1}} % Use mathrm
+%\newcommand{\gr}[1]{\boldsymbol{#1}}} % use boldsymbol
+%
+\newcommand{\ot}{\otimes} 
+\newcommand{\sq}[1]{\sqrt{#1}}
+\newcommand{\fr}[2]{\frac{#1}{#2}} 
+\newcommand{\bra}[1]{\langle#1|} 
+\newcommand{\ket}[1]{|#1\rangle} 
+\newcommand{\av}[1]{\langle{#1}\rangle} %Average
+\newcommand{\kb}[2]{|#1\rangle\langle#2|} %ketbra
+\newcommand{\proj}[1]{\ket{#1}\bra{#1}} % Projecteur
+\newcommand{\bk}[2]{\langle#1\ket{#2}} %braket
+\newcommand{\mel}[3]{\bra{#1}#2\ket{#3}} %Matrix element
+\newcommand{\ddt}[1]{\frac{\mathrm{d}#1}{\mathrm{d}t}}  %derivation par à t
+\newcommand{\ddx}[1]{\frac{\mathrm{d}#1}{\mathrm{d}x}}  %derivation par à x
+\newcommand{\dd}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}  %derivation par à 
+\newcommand{\dx}{\mathrm{d}x}  %derivation par à x
+\newcommand{\dpp}{\mathrm{d}p}  %derivation par à p
+\newcommand{\dpt}[1]{\frac{\mathrm{\partial}#1}{\mathrm{\partial}t}} %derivation partielle par rapport à t
+\newcommand{\dpx}[1]{\frac{\mathrm{\partial}#1}{\mathrm{\partial}x}} %derivation partielle par rapport à x
+\newcommand{\dpz}[1]{\frac{\partial#1}{\partial z}} %derivation partielle par rapport à z
+%
+\newcommand{\tcb}[1]{\textcolor{blue}{#1}} % textcolor{blue}{#1}
+\newcommand{\tcr}[1]{\textcolor{red}{#1}} % textcolor{red}{#1}
+\newcommand{\tct}[1]{\textcolor{teal}{#1}} % textcolor{teal}{#1}
+%
+\newcommand{\hh}{\mathcal{H}} % Espace de Hilbert
+\newcommand{\X}{\mathtt{X}} %Matrice de Pauli X
+\newcommand{\Y}{\mathtt{Y}} %Matrice de Pauli Y
+\newcommand{\Z}{\mathtt{Z}} %Matrice de Pauli Z
+\newcommand{\W}{\mathtt{W}} %Operateur de Walsh-Hadamard W%
+\newcommand{\U}{\mathtt{U}} %Operateur U quelconque%
+\newcommand{\R}{\mathtt{R}} %Operateur R quelconque%
+\newcommand{\PS}{\mathtt{P}} %Operateur P quelconque%
+\newcommand{\HH}{\mathtt{H}} %Opérateur Hamiltonien H
+\newcommand{\CX}{\mathtt{CX}} %Operateur CX %
+\newcommand{\CZ}{\mathtt{CZ}} %Operateur CZ %
+\newcommand{\CU}{\mathtt{CU}} %Operateur CU %
+\newcommand{\CR}{\mathtt{CR}} %Operateur CR %
+\newcommand{\BS}{\mathtt{BS}} %Operateur BS %
+%
+\newcommand{\T}{\mathtt{T}} %Operateur T quelconque%
+\newcommand{\D}{\mathtt{D}} %Operateur D quelconque%
+\newcommand{\G}{\mathtt{G}} %Operateur G quelconque%
+\newcommand{\E}{\mathtt{E}} %Operateur E quelconque%
+\newcommand{\K}{\mathtt{K}} %Operateur K quelconque%
+\newcommand{\V}{\mathtt{V}} %Operateur K quelconque%
+\newcommand{\N}{\mathtt{N}} %Operator N
+\newcommand{\M}{\mathtt{M}} %Operator M
+\newcommand{\A}{\mathtt{A}} %Operator A
+\newcommand{\B}{\mathtt{B}} %Operator B
+\newcommand{\Q}{\mathtt{Q}} %Operateur Q quelconque%
+\newcommand{\Oo}{\mathtt{O}} %Operateur O quelconque%
+\newcommand{\FF}{\mathtt{F}} %Operateur F quelconque%
+\newcommand{\St}{\mathtt{S}} %Operateur S quelconque%
+\newcommand{\I}{\mathbb{I}} %Opérateur Identité I
+\newcommand{\OO}{\mathbb{O}} %Opérateur Nul O
+\newcommand{\KK}{\mathbb{K}} %Superopérateur K%
+\newcommand{\F}{\mathbb{F}} %Espace F
+\newcommand{\C}{\mathbb{C}} %Espace C
+%
+\newcommand{\ad}{a^\dag} % Operateur bosonique adjoint
+\newcommand{\nb}{\bar{n}} % n bar (thermal state)
+\newcommand{\z}{\zeta} %Symbole \zeta
+\newcommand{\hbd}{\frac{\hbar}{2}} %
+\newcommand{\br}{\bls{r}} % r bold
+\newcommand{\bkk}{\bls{k}} % k bold
+\newcommand{\bA}{\bls{A}} % A bold
+\newcommand{\bE}{\bls{E}} % E bold
+\newcommand{\bB}{\bls{B}} % B bold
+\newcommand{\bhvr}{\bls{\hat{\varepsilon}}}
+%
+%Encadrer les equations en couleurs
+\newcommand{\tequation}[1]
+{\begin{equation}\tcbhighmath{#1}
+\end{equation}}
+
+\newcommand{\talign}[1]
+{\begin{empheq}[box=\tcbhighmath]{align}
+#1
+\end{empheq}}
+
+%quantikz
+\newcommand{\tquantikz}[1]
+{\begin{quantikz}
+#1
+\end{quantikz}}
+%
+\newcommand{\ttquantikz}[1]
+{\begin{tikzcd}[ampersand replacement=\&]
+#1
+\end{tikzcd}}
+
